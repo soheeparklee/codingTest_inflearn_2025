@@ -1,4 +1,4 @@
-package com.example.ct_inflean_2024.String;
+package com.example.ct_inflean_2024;
 
 import java.util.*;
 
