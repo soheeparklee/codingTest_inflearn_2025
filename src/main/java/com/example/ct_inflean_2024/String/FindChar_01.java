@@ -1,0 +1,18 @@
+package com.example.ct_inflean_2024.String;
+
+import java.util.Scanner;
+
+public class FindChar_01 {
+    public static void main(String[] args){
+        Scanner sc =new Scanner(System.in);
+        String input = sc.nextLine().toLowerCase();
+        char c = sc.nextLine().toLowerCase().charAt(0);
+
+        int count = 0;
+        for(int i=0; i<input.length(); i++){
+            if(input.charAt(i) == c ) count++;
+        }
+
+        System.out.println(count);
+    }
+}
