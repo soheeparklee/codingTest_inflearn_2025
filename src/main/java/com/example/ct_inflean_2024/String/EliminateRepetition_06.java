@@ -1,8 +1,10 @@
 package com.example.ct_inflean_2024.String;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class EliminateRepetition_06 {
+/*
     public boolean isExists(String answer, char c){
         char[] answerArr = answer.toCharArray();
         for(char a: answerArr){
@@ -16,6 +18,19 @@ public class EliminateRepetition_06 {
         char[] charArr = input.toCharArray();
         for(char c: charArr){
             if(!isExists(answer, c)){
+                answer += c;
+            }
+        }
+        return answer;
+    }
+*/
+    public String solution(String input){
+        String answer = "";
+        ArrayList<Character> list = new ArrayList<>();
+        char[] charArr = input.toCharArray();
+        for( char c: charArr ){
+            if(!list.contains(c)){
+                list.add(c);
                 answer += c;
             }
         }
